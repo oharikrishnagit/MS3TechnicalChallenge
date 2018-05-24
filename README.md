@@ -1,2 +1,2 @@
 # MS3TechnicalChallenge
-“MS3 and ME” Technical Challenge
+A client has requested a web application that calls an API-enabled backend utilizing an algorithm.  The backend algorithm takes in 2 integers representing a range, and converts each number in the range. Multiples of 7 convert to “MS3”, multiples of 3 convert to “ME”, and multiples of both 7 and 3 convert to “MS3 and ME”.  The algorithm should be created in the most optimized way possible. The input range has a limit from a minimum of 1 to a maximum of 200. Ideally, users should be able to query inputs HTTP API calls
