@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>“MS3 and ME” Technical Challenge</title>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    	<script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/rangeConversion.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Convert Range</h1>
+            <form>
+                <div class="form-group">
+                    <label for="start">Start</label>
+                    <input class="form-control" type="number" min="1" max="200" name="start" id="start"/>
+                </div>
+                <div class="form-group">
+                    <label for="start">End</label>
+                    <input class="form-control" type="number" min="1" max="200" name="end" id="end"/>
+                </div>
+                <button class="btn btn-default">Convert</button>
+            </form>
+            <br/>
+          <div class="form-group has-feedback has-search" style="display: none;" id="searchBlock">
+    			<span class="glyphicon glyphicon-search form-control-feedback"></span>
+    			<input type="number" class="form-control" placeholder="Search for any number within range" 
+    				id="myInput" onkeyup="showFilteredResults()" onblur="showExactResults()">
+  			</div>
+            
+            <table class="table table-hover" style="display: none;" id="conversionTable">
+                <thead>
+                <th>Number</th>
+                <th>Converted Value</th>
+                </thead>
+                <tbody id="conversionResults">
+				</tbody>
+            </table>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                $( "form" ).on( "submit", function( event ) {
+                	event.preventDefault();
+                    var formValues = $( this ).serialize();
+                    showConversionTable(formValues);
+                });
+            });
+        </script>
+    </body>
+</html>
