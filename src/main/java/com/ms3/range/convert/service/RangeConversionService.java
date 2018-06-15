@@ -13,7 +13,7 @@ public class RangeConversionService {
 	
 	public Map<Integer,String> convertRange(Integer start , Integer end) {
 		if (start > end) {
-			throw new ConstraintViolationException("The start of range must be less than or equal to end of range", null);
+			throw new ConstraintViolationException("The start of range must be less than or equal to the end of the range", null);
 		}
 		return IntStream.rangeClosed(start,end)
 				.boxed()
