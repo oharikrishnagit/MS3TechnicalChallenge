@@ -6,7 +6,7 @@
 	<groupId>com.ms3</groupId>
 	<artifactId>MS3TechnicalChallenge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>MS3TechnicalChallenge</name>
 	<description>“MS3 and ME” Technical Challenge</description>
